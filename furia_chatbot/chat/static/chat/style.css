@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Arial", sans-serif;
+}
+
+.iphone-frame {
+    background: #f6f6f6;
+    width: 375px;
+    height: 667px;
+    border-radius: 40px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat-header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.contact-info {
+    margin-left: 10px;
+}
+
+.contact-info .name {
+    font-weight: bold;
+}
+
+.contact-info .status {
+    font-size: 12px;
+    color: green;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ddd;
+}
+
+.bubble {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.bubble.sent {
+    background-color: #000;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+.bubble.received {
+    background-color: #eee;
+    color: black;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+.bubble .status {
+    font-size: 10px;
+    text-align: right;
+    margin-top: 4px;
+    color: gray;
+}
+
+.user-input {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.user-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    background: #f1f1f1;
+}
+
+.user-input button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
